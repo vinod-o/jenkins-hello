@@ -2,7 +2,15 @@ pipeline {
     agent any {
         stages{
             stage('Hello-world'){
-                echo 'Hello-World'
+                steps{
+                    echo " build stage"
+                }
+    
+            }
+            stage('push'){
+                steps{
+                    echo "pushed sucessfully"
+                }
             }
         }
     }
